@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.inventsuite.testscript.variants.varianttestcase06">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="varianttestcase0603"/>
+          <include name="login"/>
+          <include name="logout"/>
+          <include name="closeBrowser"/>
+          <include name="varianttestcase0602"/>
+          <include name="varianttestcase0604"/>
+          <include name="varianttestcase0601"/>
+        </methods>
+      </class> <!-- com.inventsuite.testscript.variants.varianttestcase06 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

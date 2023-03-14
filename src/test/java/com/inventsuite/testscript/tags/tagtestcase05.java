@@ -1,0 +1,87 @@
+package com.inventsuite.testscript.tags;
+
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
+
+import com.inventsuite.generics.FileLib;
+import com.inventsuite.generics.tagbaseclass;
+import com.inventsuite.pom.tags;
+
+public class tagtestcase05 extends tagbaseclass{
+	
+	@Test(priority = 1)
+	public void tagtestcase0501() throws EncryptedDocumentException, IOException, InterruptedException
+	{
+		tags t= new tags(driver);
+		FileLib f= new FileLib();
+		
+		t.getAdd_tag_btn().click();
+		//String data1= f.getExcelData("tag", 2, 2);
+		String data2=f.getExcelData("tag", 2, 3);
+		 double data3=f.getExcelData2("tag", 2, 4);
+		
+		String t1=Double.toString(data3);
+		//t.getTag_name_textbox().sendKeys(data1);
+		t.getSlug_textbox().sendKeys(data2);
+		t.getDisplayorder_textbox().sendKeys(t1);
+		
+		
+		Select s= new Select(t.getSelect_active_drpdwn());
+		s.selectByIndex(1);
+		
+		Select s1= new Select(t.getSelect_featured_drpdwn());
+		s1.selectByIndex(1);
+		
+		Select s2= new Select(t.getSelect_img_size_drpdwn());
+		s2.selectByIndex(1);
+		
+		Thread.sleep(2000);
+		
+		t.getCreate_tag_btn().click();
+		
+		Thread.sleep(2000);
+		
+		assert t.getTag_name_validation().isDisplayed();
+		
+	}
+	
+	@Test(priority = 2)
+	public void testcase0502() throws EncryptedDocumentException, IOException, InterruptedException
+	{
+		tags t= new tags(driver);
+		FileLib f= new FileLib();
+		
+		t.getAdd_tag_btn().click();
+		//String data1= f.getExcelData("tag", 3, 2);
+		//String data2=f.getExcelData("tag", 3, 3);
+		 double data3=f.getExcelData2("tag", 3, 4);
+		 
+		 String t1=Double.toString(data3);
+		
+		//t.getTag_name_textbox().sendKeys(data1);
+		//t.getSlug_textbox().sendKeys(data2);
+		t.getDisplayorder_textbox().sendKeys(t1);
+		
+		Select s= new Select(t.getSelect_active_drpdwn());
+		s.selectByIndex(1);
+		
+		Select s1= new Select(t.getSelect_featured_drpdwn());
+		s1.selectByIndex(1);
+		
+		Select s2= new Select(t.getSelect_img_size_drpdwn());
+		s2.selectByIndex(1);
+		
+		Thread.sleep(2000);
+		
+		t.getCreate_tag_btn().click();
+		
+		Thread.sleep(2000);
+		
+		assert t.getTag_name_validation().isDisplayed();
+		
+	}
+
+}
