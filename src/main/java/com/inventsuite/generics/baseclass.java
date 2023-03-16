@@ -57,15 +57,15 @@ public class baseclass {
 		driver.get("https://admin.gloify.co/login");
 
 	}
-	@AfterMethod
-	public void logout() throws InterruptedException
-	{
-		profile p= new profile(driver);
-		p.getUserimg().click();
-		Thread.sleep(3000);
-		p.getLogout().click();
-		Thread.sleep(3000);
-	}
+//	@AfterMethod
+//	public void logout() throws InterruptedException
+//	{
+//		profile p= new profile(driver);
+//		p.getUserimg().click();
+//		Thread.sleep(3000);
+//		p.getLogout().click();
+//		Thread.sleep(3000);
+//	}
 
 	/** 
 	 * This is a actions method for mouse hover operation

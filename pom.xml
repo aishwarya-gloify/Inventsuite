@@ -10,7 +10,7 @@
 
   <name>Inventsuite</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://admin.gloify.co/login </url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -70,10 +70,21 @@
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.11.0</version>
+          <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+           </configuration>
+        
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
+          <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFiles>testng.xml</suiteXmlFiles>
+          </suiteXmlFiles>
+          </configuration>
+
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
