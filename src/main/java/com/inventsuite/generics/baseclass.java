@@ -10,6 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
@@ -18,9 +19,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.inventsuite.pom.EnterTimeTrackPage;
 import com.inventsuite.pom.LoginPage;
 import com.inventsuite.pom.profile;
+
 /**
  * This is base class
  * @author Aishwarya
@@ -31,6 +32,11 @@ public class baseclass {
 
 	static {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\gloif\\eclipse-workspace\\Inventsuite\\src\\main\\resources\\driver\\chromedriver.exe");
+		//WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().setup();
+		//driver = new ChromeDriver();
+//		WebDriverManager.chromedriver().setup();
+//		ChromeOptions options = new ChromeCapabilities().setChromeOptions();
 	}
 	public static WebDriver driver;
 	@BeforeClass
