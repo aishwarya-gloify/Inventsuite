@@ -31,7 +31,7 @@ import com.inventsuite.pom.profile;
 public class baseclass {
 
 	static {
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\gloif\\eclipse-workspace\\Inventsuite\\src\\main\\resources\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 		//WebDriverManager.chromedriver().setup();
 		//WebDriverManager.chromedriver().setup();
 		//driver = new ChromeDriver();
