@@ -1,5 +1,6 @@
 package com.inventsuite.generics;
 
+import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
@@ -31,7 +32,12 @@ import com.inventsuite.pom.profile;
 public class baseclass {
 
 	static {
-		System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+		//System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+		ChromeOptions options = new ChromeOptions();
+
+		options.addExtensions(new File("\"C:\\Users\\gloif\\Downloads\\chromedriver_win32 (4)\\chromedriver.exe\""));
+
+		ChromeDriver driver = new ChromeDriver(options);
 		//WebDriverManager.chromedriver().setup();
 		//WebDriverManager.chromedriver().setup();
 		//driver = new ChromeDriver();
