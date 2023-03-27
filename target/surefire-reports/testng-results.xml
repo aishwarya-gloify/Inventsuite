@@ -2,37 +2,37 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-17T16:27:21 IST" name="com.inventsuite.testscript" finished-at="2023-03-17T16:27:23 IST" duration-ms="1258">
+  <suite started-at="2023-03-27T11:30:56 IST" name="com.inventsuite.testscript" finished-at="2023-03-27T11:30:57 IST" duration-ms="776">
     <groups>
     </groups>
-    <test started-at="2023-03-17T16:27:21 IST" name="Inventsuite" finished-at="2023-03-17T16:27:23 IST" duration-ms="1258">
+    <test started-at="2023-03-27T11:30:56 IST" name="Inventsuite" finished-at="2023-03-27T11:30:57 IST" duration-ms="776">
       <class name="com.inventsuite.testscript.logintestcase01">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.inventsuite.testscript.logintestcase01@1d548a08]" started-at="2023-03-17T16:27:21 IST" name="openBrowser" finished-at="2023-03-17T16:27:23 IST" duration-ms="1187" status="FAIL">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.inventsuite.testscript.logintestcase01@1d548a08]" started-at="2023-03-27T11:30:56 IST" name="openBrowser" finished-at="2023-03-27T11:30:57 IST" duration-ms="738" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[unknown error: cannot find Chrome binary
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'GLOIFY-TECH', ip: '172.20.10.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+System info: host: 'GLOIFY-TECH', ip: '192.168.1.51', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: driver.version: ChromeDriver
 remote stacktrace: Backtrace:
-(No symbol) [0x008FDCE3]
-(No symbol) [0x008939D1]
-(No symbol) [0x007A4DA8]
-(No symbol) [0x007C034B]
-(No symbol) [0x007BED19]
-(No symbol) [0x007F15AE]
-(No symbol) [0x007F129C]
-(No symbol) [0x007EACC6]
-(No symbol) [0x007C6F68]
-(No symbol) [0x007C80CD]
-GetHandleVerifier [0x00B73832+2506274]
-GetHandleVerifier [0x00BA9794+2727300]
-GetHandleVerifier [0x00BAE36C+2746716]
-GetHandleVerifier [0x009A6690+617600]
-(No symbol) [0x0089C712]
-(No symbol) [0x008A1FF8]
-(No symbol) [0x008A20DB]
-(No symbol) [0x008AC63B]
+(No symbol) [0x0106DCE3]
+(No symbol) [0x010039D1]
+(No symbol) [0x00F14DA8]
+(No symbol) [0x00F3034B]
+(No symbol) [0x00F2ED19]
+(No symbol) [0x00F615AE]
+(No symbol) [0x00F6129C]
+(No symbol) [0x00F5ACC6]
+(No symbol) [0x00F36F68]
+(No symbol) [0x00F380CD]
+GetHandleVerifier [0x012E3832+2506274]
+GetHandleVerifier [0x01319794+2727300]
+GetHandleVerifier [0x0131E36C+2746716]
+GetHandleVerifier [0x01116690+617600]
+(No symbol) [0x0100C712]
+(No symbol) [0x01011FF8]
+(No symbol) [0x010120DB]
+(No symbol) [0x0101C63B]
 BaseThreadInitThunk [0x75317D69+25]
 RtlInitializeExceptionChain [0x7702B74B+107]
 RtlClearBits [0x7702B6CF+191]
@@ -41,27 +41,27 @@ RtlClearBits [0x7702B6CF+191]
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'GLOIFY-TECH', ip: '172.20.10.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+System info: host: 'GLOIFY-TECH', ip: '192.168.1.51', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: driver.version: ChromeDriver
 remote stacktrace: Backtrace:
-(No symbol) [0x008FDCE3]
-(No symbol) [0x008939D1]
-(No symbol) [0x007A4DA8]
-(No symbol) [0x007C034B]
-(No symbol) [0x007BED19]
-(No symbol) [0x007F15AE]
-(No symbol) [0x007F129C]
-(No symbol) [0x007EACC6]
-(No symbol) [0x007C6F68]
-(No symbol) [0x007C80CD]
-GetHandleVerifier [0x00B73832+2506274]
-GetHandleVerifier [0x00BA9794+2727300]
-GetHandleVerifier [0x00BAE36C+2746716]
-GetHandleVerifier [0x009A6690+617600]
-(No symbol) [0x0089C712]
-(No symbol) [0x008A1FF8]
-(No symbol) [0x008A20DB]
-(No symbol) [0x008AC63B]
+(No symbol) [0x0106DCE3]
+(No symbol) [0x010039D1]
+(No symbol) [0x00F14DA8]
+(No symbol) [0x00F3034B]
+(No symbol) [0x00F2ED19]
+(No symbol) [0x00F615AE]
+(No symbol) [0x00F6129C]
+(No symbol) [0x00F5ACC6]
+(No symbol) [0x00F36F68]
+(No symbol) [0x00F380CD]
+GetHandleVerifier [0x012E3832+2506274]
+GetHandleVerifier [0x01319794+2727300]
+GetHandleVerifier [0x0131E36C+2746716]
+GetHandleVerifier [0x01116690+617600]
+(No symbol) [0x0100C712]
+(No symbol) [0x01011FF8]
+(No symbol) [0x010120DB]
+(No symbol) [0x0101C63B]
 BaseThreadInitThunk [0x75317D69+25]
 RtlInitializeExceptionChain [0x7702B74B+107]
 RtlClearBits [0x7702B6CF+191]
@@ -129,36 +129,32 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.inventsuite.testscript.logintestcase01@1d548a08]" started-at="2023-03-17T16:27:23 IST" name="login" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1679050643192" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="testlogin()[pri:0, instance:com.inventsuite.testscript.logintestcase01@1d548a08]" started-at="2023-03-17T16:27:23 IST" name="testlogin" finished-at="2023-03-17T16:27:23 IST" duration-ms="0" status="SKIP">
+        <test-method signature="testlogin()[pri:0, instance:com.inventsuite.testscript.logintestcase01@1d548a08]" started-at="2023-03-27T11:30:57 IST" name="testlogin" finished-at="2023-03-27T11:30:57 IST" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[unknown error: cannot find Chrome binary
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'GLOIFY-TECH', ip: '172.20.10.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+System info: host: 'GLOIFY-TECH', ip: '192.168.1.51', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: driver.version: ChromeDriver
 remote stacktrace: Backtrace:
-(No symbol) [0x008FDCE3]
-(No symbol) [0x008939D1]
-(No symbol) [0x007A4DA8]
-(No symbol) [0x007C034B]
-(No symbol) [0x007BED19]
-(No symbol) [0x007F15AE]
-(No symbol) [0x007F129C]
-(No symbol) [0x007EACC6]
-(No symbol) [0x007C6F68]
-(No symbol) [0x007C80CD]
-GetHandleVerifier [0x00B73832+2506274]
-GetHandleVerifier [0x00BA9794+2727300]
-GetHandleVerifier [0x00BAE36C+2746716]
-GetHandleVerifier [0x009A6690+617600]
-(No symbol) [0x0089C712]
-(No symbol) [0x008A1FF8]
-(No symbol) [0x008A20DB]
-(No symbol) [0x008AC63B]
+(No symbol) [0x0106DCE3]
+(No symbol) [0x010039D1]
+(No symbol) [0x00F14DA8]
+(No symbol) [0x00F3034B]
+(No symbol) [0x00F2ED19]
+(No symbol) [0x00F615AE]
+(No symbol) [0x00F6129C]
+(No symbol) [0x00F5ACC6]
+(No symbol) [0x00F36F68]
+(No symbol) [0x00F380CD]
+GetHandleVerifier [0x012E3832+2506274]
+GetHandleVerifier [0x01319794+2727300]
+GetHandleVerifier [0x0131E36C+2746716]
+GetHandleVerifier [0x01116690+617600]
+(No symbol) [0x0100C712]
+(No symbol) [0x01011FF8]
+(No symbol) [0x010120DB]
+(No symbol) [0x0101C63B]
 BaseThreadInitThunk [0x75317D69+25]
 RtlInitializeExceptionChain [0x7702B74B+107]
 RtlClearBits [0x7702B6CF+191]
@@ -167,27 +163,27 @@ RtlClearBits [0x7702B6CF+191]
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'GLOIFY-TECH', ip: '172.20.10.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+System info: host: 'GLOIFY-TECH', ip: '192.168.1.51', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: driver.version: ChromeDriver
 remote stacktrace: Backtrace:
-(No symbol) [0x008FDCE3]
-(No symbol) [0x008939D1]
-(No symbol) [0x007A4DA8]
-(No symbol) [0x007C034B]
-(No symbol) [0x007BED19]
-(No symbol) [0x007F15AE]
-(No symbol) [0x007F129C]
-(No symbol) [0x007EACC6]
-(No symbol) [0x007C6F68]
-(No symbol) [0x007C80CD]
-GetHandleVerifier [0x00B73832+2506274]
-GetHandleVerifier [0x00BA9794+2727300]
-GetHandleVerifier [0x00BAE36C+2746716]
-GetHandleVerifier [0x009A6690+617600]
-(No symbol) [0x0089C712]
-(No symbol) [0x008A1FF8]
-(No symbol) [0x008A20DB]
-(No symbol) [0x008AC63B]
+(No symbol) [0x0106DCE3]
+(No symbol) [0x010039D1]
+(No symbol) [0x00F14DA8]
+(No symbol) [0x00F3034B]
+(No symbol) [0x00F2ED19]
+(No symbol) [0x00F615AE]
+(No symbol) [0x00F6129C]
+(No symbol) [0x00F5ACC6]
+(No symbol) [0x00F36F68]
+(No symbol) [0x00F380CD]
+GetHandleVerifier [0x012E3832+2506274]
+GetHandleVerifier [0x01319794+2727300]
+GetHandleVerifier [0x0131E36C+2746716]
+GetHandleVerifier [0x01116690+617600]
+(No symbol) [0x0100C712]
+(No symbol) [0x01011FF8]
+(No symbol) [0x010120DB]
+(No symbol) [0x0101C63B]
 BaseThreadInitThunk [0x75317D69+25]
 RtlInitializeExceptionChain [0x7702B74B+107]
 RtlClearBits [0x7702B6CF+191]
@@ -255,7 +251,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testlogin -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.inventsuite.testscript.logintestcase01@1d548a08]" started-at="2023-03-17T16:27:23 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1679050643197" status="SKIP">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.inventsuite.testscript.logintestcase01@1d548a08]" started-at="2023-03-27T11:30:57 IST" name="login" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1679896857086" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.inventsuite.testscript.logintestcase01@1d548a08]" started-at="2023-03-27T11:30:57 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1679896857092" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
