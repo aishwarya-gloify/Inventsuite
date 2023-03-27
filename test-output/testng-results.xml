@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-27T11:19:15 IST" name="com.inventsuite.testscript" finished-at="2023-03-27T11:19:18 IST" duration-ms="3699">
+  <suite started-at="2023-03-27T15:59:09 IST" name="com.inventsuite.testscript" finished-at="2023-03-27T15:59:12 IST" duration-ms="2792">
     <groups>
     </groups>
-    <test started-at="2023-03-27T11:19:15 IST" name="Inventsuite" finished-at="2023-03-27T11:19:18 IST" duration-ms="3699">
+    <test started-at="2023-03-27T15:59:09 IST" name="Inventsuite" finished-at="2023-03-27T15:59:12 IST" duration-ms="2792">
       <class name="com.inventsuite.testscript.logintestcase01">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.inventsuite.testscript.logintestcase01@5f058f00]" started-at="2023-03-27T11:19:15 IST" name="openBrowser" finished-at="2023-03-27T11:19:16 IST" duration-ms="1675" status="PASS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:com.inventsuite.testscript.logintestcase01@117e0fe5]" started-at="2023-03-27T15:59:09 IST" name="openBrowser" finished-at="2023-03-27T15:59:10 IST" duration-ms="799" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.inventsuite.testscript.logintestcase01@5f058f00]" started-at="2023-03-27T11:19:16 IST" name="login" finished-at="2023-03-27T11:19:18 IST" duration-ms="1572" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.inventsuite.testscript.logintestcase01@117e0fe5]" started-at="2023-03-27T15:59:10 IST" name="login" finished-at="2023-03-27T15:59:12 IST" duration-ms="1557" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="testlogin()[pri:0, instance:com.inventsuite.testscript.logintestcase01@5f058f00]" started-at="2023-03-27T11:19:18 IST" name="testlogin" finished-at="2023-03-27T11:19:18 IST" duration-ms="49" status="PASS">
+        <test-method signature="testlogin()[pri:0, instance:com.inventsuite.testscript.logintestcase01@117e0fe5]" started-at="2023-03-27T15:59:12 IST" name="testlogin" finished-at="2023-03-27T15:59:12 IST" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testlogin -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.inventsuite.testscript.logintestcase01@5f058f00]" started-at="2023-03-27T11:19:18 IST" name="closeBrowser" finished-at="2023-03-27T11:19:18 IST" duration-ms="357" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.inventsuite.testscript.logintestcase01@117e0fe5]" started-at="2023-03-27T15:59:12 IST" name="closeBrowser" finished-at="2023-03-27T15:59:12 IST" duration-ms="379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
