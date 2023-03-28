@@ -9,10 +9,115 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">com.inventsuite.testscript</th></tr>
-<tr><td><a href="#t0">Inventsuite</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">71,987</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Inventsuite</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">943</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">com.inventsuite.testscript</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Inventsuite &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.inventsuite.testscript.logintestcase01</td><td><a href="#m0">testlogin</a></td><td rowspan="1">1679913421325</td><td rowspan="1">46</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">com.inventsuite.testscript</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Inventsuite &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.inventsuite.testscript.logintestcase01</td><td><a href="#m0">openBrowser</a></td><td rowspan="1">1679924777454</td><td rowspan="1">883</td></tr><tr><th colspan="4">Inventsuite &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="2">com.inventsuite.testscript.logintestcase01</td><td><a href="#m1">closeBrowser</a></td><td rowspan="1">1679924778366</td><td rowspan="1">-1679924778366</td></tr><tr class="skippedeven"><td><a href="#m2">login</a></td><td rowspan="1">1679924778362</td><td rowspan="1">-1679924778362</td></tr><tr><th colspan="4">Inventsuite &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.inventsuite.testscript.logintestcase01</td><td><a href="#m3">testlogin</a></td><td rowspan="1">1679924778364</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Inventsuite</h2><h3 id="m0">com.inventsuite.testscript.logintestcase01#testlogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Inventsuite</h2><h3 id="m0">com.inventsuite.testscript.logintestcase01#openBrowser</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GLOIFY-TECH&apos;, ip: &apos;192.168.0.181&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	(No symbol) [0x0106DCE3]
+	(No symbol) [0x010039D1]
+	(No symbol) [0x00F14DA8]
+	(No symbol) [0x00F3034B]
+	(No symbol) [0x00F2ED19]
+	(No symbol) [0x00F615AE]
+	(No symbol) [0x00F6129C]
+	(No symbol) [0x00F5ACC6]
+	(No symbol) [0x00F36F68]
+	(No symbol) [0x00F380CD]
+	GetHandleVerifier [0x012E3832+2506274]
+	GetHandleVerifier [0x01319794+2727300]
+	GetHandleVerifier [0x0131E36C+2746716]
+	GetHandleVerifier [0x01116690+617600]
+	(No symbol) [0x0100C712]
+	(No symbol) [0x01011FF8]
+	(No symbol) [0x010120DB]
+	(No symbol) [0x0101C63B]
+	BaseThreadInitThunk [0x75317D69+25]
+	RtlInitializeExceptionChain [0x7702B74B+107]
+	RtlClearBits [0x7702B6CF+191]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.inventsuite.generics.baseclass.openBrowser(baseclass.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.inventsuite.testscript.logintestcase01#closeBrowser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.inventsuite.testscript.logintestcase01#login</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.inventsuite.testscript.logintestcase01#testlogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: unknown error: cannot find Chrome binary
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;GLOIFY-TECH&apos;, ip: &apos;192.168.0.181&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	(No symbol) [0x0106DCE3]
+	(No symbol) [0x010039D1]
+	(No symbol) [0x00F14DA8]
+	(No symbol) [0x00F3034B]
+	(No symbol) [0x00F2ED19]
+	(No symbol) [0x00F615AE]
+	(No symbol) [0x00F6129C]
+	(No symbol) [0x00F5ACC6]
+	(No symbol) [0x00F36F68]
+	(No symbol) [0x00F380CD]
+	GetHandleVerifier [0x012E3832+2506274]
+	GetHandleVerifier [0x01319794+2727300]
+	GetHandleVerifier [0x0131E36C+2746716]
+	GetHandleVerifier [0x01116690+617600]
+	(No symbol) [0x0100C712]
+	(No symbol) [0x01011FF8]
+	(No symbol) [0x010120DB]
+	(No symbol) [0x0101C63B]
+	BaseThreadInitThunk [0x75317D69+25]
+	RtlInitializeExceptionChain [0x7702B74B+107]
+	RtlClearBits [0x7702B6CF+191]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.inventsuite.generics.baseclass.openBrowser(baseclass.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

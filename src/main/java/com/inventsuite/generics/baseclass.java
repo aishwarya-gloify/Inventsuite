@@ -34,7 +34,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class baseclass {
 
 	static {
-		//System.setProperty("webdriver.chrome.driver","C:\\Users\\gloif\\eclipse-workspace\\Inventsuite\\src\\main\\resources\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\gloif\\eclipse-workspace\\Inventsuite\\src\\main\\resources\\driver\\chromedriver.exe");
 //		ChromeOptions options = new ChromeOptions();
 //
 //		options.addExtensions(new File("C:\\Users\\gloif\\eclipse-workspace\\Inventsuite\\src\\main\\resources\\driver\\chromedriver.exe"));
@@ -49,15 +49,27 @@ public class baseclass {
 //		WebDriverManager.chromedriver().setup();
 //		WebDriver driver=new ChromeDriver();
 		
-		
-		
+	//	ChromeOptions chromeOptions= new ChromeOptions();
+//
+//	
+//
+	//	chromeOptions.setBinary("C:\\Users\\gloif\\eclipse-workspace\\Inventsuite\\src\\main\\resources\\driver\\chromedriver.exe");
+//		System.setProperty("webdriver.chrome.driver","C:\\Users\\gloif\\eclipse-workspace\\Inventsuite\\src\\main\\resources\\driver\\chromedriver.exe");
+//		ChromeDriver driver = new ChromeDriver(chromeOptions);
+	//	driver=new ChromeDriver(chromeOptions);
+//		
+	//WebDriverManager.chromedriver().setup();
+//		capabilities: {
+//			  browserName: "chrome",
+//			   chromeOptions:'binary': 'C:\Users\gloif\eclipse-workspace\Inventsuite\src\main\resources\driver\chromedriver.exe'}, 
+//			},
 	}
 	public static WebDriver driver;
 	@BeforeClass
 	public void openBrowser() {
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver=new ChromeDriver();
-		//driver=new ChromeDriver();
+		//WebDriverManager.chromedriver().setup();
+//		WebDriver driver=new ChromeDriver();
+		driver=new ChromeDriver();
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
@@ -69,7 +81,7 @@ public class baseclass {
 	}
 	@BeforeMethod
 	public void login() throws IOException {
-		driver=new ChromeDriver();
+		//driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
 		driver.get("https://admin.gloify.co/login");
 
