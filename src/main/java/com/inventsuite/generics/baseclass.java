@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -24,6 +25,7 @@ import com.inventsuite.pom.LoginPage;
 import com.inventsuite.pom.profile;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+//from selenium import webdriver;
 
 /**
  * This is base class
@@ -34,7 +36,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class baseclass {
 
 	static {
-	//	System.setProperty("webdriver.chrome.driver","C:\\Users\\gloif\\eclipse-workspace\\Inventsuite\\src\\main\\resources\\driver\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver","C:\\Users\\gloif\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
 //		ChromeOptions options = new ChromeOptions();
 //
 //		options.addExtensions(new File("C:\\Users\\gloif\\eclipse-workspace\\Inventsuite\\src\\main\\resources\\driver\\chromedriver.exe"));
@@ -63,13 +65,20 @@ public class baseclass {
 //			  browserName: "chrome",
 //			   chromeOptions:'binary': 'C:\Users\gloif\eclipse-workspace\Inventsuite\src\main\resources\driver\chromedriver.exe'}, 
 //			},
+		//options = Options() options.binary_location = "C:\\Program Files\\Chrome\\chrome64_55.0.2883.75\\chrome.exe"driver = webdriver.Chrome(chrome_options = options, executable_path=r'C:\path\to\chromedriver.exe');
+//		ChromeOptions options = new ChromeOptions();options.addExtensions(new File("C:\\Users\\gloif\\Downloads\\chromedriver_win32 (4)\\chromedriver.exe"));
+//		ChromeDriver driver = new ChromeDriver(options);
+//		chromeOptions = WebDriverException.ChromeOptions();
+//				ChromeOptions.binary_location = "C:\\\\Users\\\\gloif\\\\AppData\\\\Local\\\\Google\\\\Chrome\\\\Application" chromeDriver = "/chromedriver.exe";
+//				driver = WebDriverException.Chrome(chromeDriver, options=chromeOptions);
+		ChromeOptions chromeOptions= new ChromeOptions(); chromeOptions.setBinary("C:\\Users\\gloif\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe"); System.setProperty("webdriver.chrome.driver","C:\\Users\\gloif\\Downloads\\chromedriver_win32 (4)\\chromedriver.exe"); driver = new ChromeDriver(chromeOptions);
 	}
 	public static WebDriver driver;
 	@BeforeClass
 	public void openBrowser() {
-		WebDriverManager.chromedriver().setup();
+		//WebDriverManager.chromedriver().setup();
 //		WebDriver driver=new ChromeDriver();
-		driver=new ChromeDriver();
+		//driver=new ChromeDriver();
 
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
