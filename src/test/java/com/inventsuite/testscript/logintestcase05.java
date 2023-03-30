@@ -35,7 +35,7 @@ public class logintestcase05 extends base{
 	Thread.sleep(5000);
 	
 	String current_url= driver.getCurrentUrl();
-	String expected_url= "https://admin.gloify.co/dashboard1";
+	String expected_url= "https://admin.gloify.co/dashboard";
 	
 	
 	Assert.assertEquals(current_url, expected_url);
