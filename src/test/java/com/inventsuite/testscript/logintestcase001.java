@@ -12,7 +12,7 @@ import com.inventsuite.testscript.logintestcase02;
 import com.demo.base;
 import com.inventsuite.generics.baseclass;
 import com.inventsuite.pom.LoginPage;
-@Listeners(com.inventsuite.generics.Listener2.class)
+@Listeners(com.demo.Listenertest.class)
 public class logintestcase001 extends base {
 	
 	@Test

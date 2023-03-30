@@ -94,6 +94,7 @@ com\inventsuite\testscript\forgotpwd\forgotpwdtestcase04.class
 com\invenstsuite\testscript\store\storetestcase07.class
 com\inventsuite\testscript\forgotpwd\forgootpwdtestcase03.class
 com\inventsuite\testscript\forgotpwd\forgotpwd06.class
+com\demo\Listenertest.class
 com\inventsuite\testscript\tags\tagtestcase08.class
 com\inventsuite\testscript\brand\brandtestcase07.class
 com\invenstsuite\testscript\store\storetestcase10.class

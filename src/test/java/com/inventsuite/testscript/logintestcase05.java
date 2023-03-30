@@ -14,7 +14,7 @@ import com.inventsuite.generics.FileLib;
 import com.inventsuite.generics.baseclass;
 import com.inventsuite.pom.LoginPage;
 
-@Listeners(com.inventsuite.generics.Listener2.class)
+@Listeners(com.demo.Listenertest.class)
 public class logintestcase05 extends base{
 	@Test
 	public void testcase05() throws InterruptedException, EncryptedDocumentException, IOException

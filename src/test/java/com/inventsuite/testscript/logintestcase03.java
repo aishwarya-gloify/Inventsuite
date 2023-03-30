@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import com.demo.base;
 import com.inventsuite.generics.baseclass;
 import com.inventsuite.pom.LoginPage;
-@Listeners(com.inventsuite.generics.Listener2.class)
+@Listeners(com.demo.Listenertest.class)
 public class logintestcase03 extends base{
 	@Test
 	public void testcase03() throws EncryptedDocumentException, IOException, InterruptedException

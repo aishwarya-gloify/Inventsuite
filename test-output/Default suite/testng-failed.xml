@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testcasedemo.testcase1">
+      <class name="com.inventsuite.testscript.logintestcase05">
         <methods>
           <include name="closeBrowser"/>
-          <include name="testcase"/>
+          <include name="testcase05"/>
           <include name="openBrowser"/>
           <include name="login"/>
         </methods>
-      </class> <!-- com.testcasedemo.testcase1 -->
+      </class> <!-- com.inventsuite.testscript.logintestcase05 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

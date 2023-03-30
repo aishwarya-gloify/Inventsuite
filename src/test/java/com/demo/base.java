@@ -7,9 +7,13 @@ import java.io.IOException;
 
 import java.util.concurrent.TimeUnit;
 
+
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+
+
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -20,7 +24,7 @@ import org.testng.annotations.Test;
 import com.inventsuite.pom.LoginPage;
 import com.inventsuite.pom.profile;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 
 /**
@@ -67,6 +71,19 @@ public static WebDriver driver;
 
 	}
 
+
+	
+
+//	@AfterMethod
+//	public void afterMETHOD(ITestResult result) throws Exception {
+//
+// if(result.getStatus()==ITestResult.FAILURE) {
+//	 File sfilename1= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+// FileHandler.copy(sfilename1, new File("C:\\Users\\gloif\\eclipse-workspace\\Inventsuite\\src\\main\\resources\\screenshot"+".png"));
+//	 System.out.println("test fail");
+// 
+// }
+//	}
 	
 
 

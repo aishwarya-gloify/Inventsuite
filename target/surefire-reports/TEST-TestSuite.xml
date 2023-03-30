@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="22.203" tests="6" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="22.058" tests="6" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.6+9-LTS-190"/>
@@ -58,10 +58,29 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="testcase" classname="com.inventsuite.testscript.logintestcase001" time="0.072"/>
+  <testcase name="testcase" classname="com.inventsuite.testscript.logintestcase001" time="0.078"/>
   <testcase name="testlogin" classname="com.inventsuite.testscript.logintestcase01" time="0.009"/>
-  <testcase name="testcase02" classname="com.inventsuite.testscript.logintestcase02" time="5.053"/>
-  <testcase name="testcase03" classname="com.inventsuite.testscript.logintestcase03" time="0.061"/>
-  <testcase name="testcase04" classname="com.inventsuite.testscript.logintestcase04" time="5.265"/>
-  <testcase name="testcase05" classname="com.inventsuite.testscript.logintestcase05" time="11.743"/>
+  <testcase name="testcase02" classname="com.inventsuite.testscript.logintestcase02" time="5.055"/>
+  <testcase name="testcase03" classname="com.inventsuite.testscript.logintestcase03" time="0.065"/>
+  <testcase name="testcase04" classname="com.inventsuite.testscript.logintestcase04" time="5.268"/>
+  <testcase name="testcase05" classname="com.inventsuite.testscript.logintestcase05" time="11.583">
+    <failure message="expected [https://admin.gloify.co/dashboard1] but found [https://admin.gloify.co/dashboard]" type="java.lang.AssertionError">java.lang.AssertionError: expected [https://admin.gloify.co/dashboard1] but found [https://admin.gloify.co/dashboard]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.inventsuite.testscript.logintestcase05.testcase05(logintestcase05.java:41)
+</failure>
+    <system-out>Login
+</system-out>
+    <system-err>Starting ChromeDriver 111.0.5563.64 (c710e93d5b63b7095afe8c2c17df34408078439d-refs/branch-heads/5563@{#995}) on port 62061
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Mar 30, 2023 6:17:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</system-err>
+  </testcase>
 </testsuite>

@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 import com.demo.base;
 import com.inventsuite.generics.baseclass;
 import com.inventsuite.pom.LoginPage;
-@Listeners(com.inventsuite.generics.Listener2.class)
+@Listeners(com.demo.Listenertest.class)
 public class logintestcase04 extends base{
 	@Test
 	public void testcase04() throws EncryptedDocumentException, IOException, InterruptedException

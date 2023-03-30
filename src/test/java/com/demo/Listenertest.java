@@ -1,4 +1,4 @@
-package com.inventsuite.generics;
+package com.demo;
 
 import java.io.File;
 import java.io.IOException;
@@ -10,7 +10,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class Listener2 extends baseclass implements ITestListener{
+public class Listenertest extends base implements ITestListener{
 	@Override
 	public void onTestStart(ITestResult result) {
 
@@ -58,5 +58,6 @@ public class Listener2 extends baseclass implements ITestListener{
 	public void onFinish(ITestContext context) {
 
 	}
+
 
 }
