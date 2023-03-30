@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 33.218 sec <<< FAILURE!
-testcase05(com.inventsuite.testscript.logintestcase05)  Time elapsed: 11.583 sec  <<< FAILURE!
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 36.761 sec <<< FAILURE!
+testcase05(com.inventsuite.testscript.logintestcase05)  Time elapsed: 12.455 sec  <<< FAILURE!
 java.lang.AssertionError: expected [https://admin.gloify.co/dashboard1] but found [https://admin.gloify.co/dashboard]
 	at org.testng.Assert.fail(Assert.java:99)
 	at org.testng.Assert.failNotEquals(Assert.java:1037)
