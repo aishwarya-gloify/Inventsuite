@@ -3,18 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.inventsuite.testscript.variants.varianttestcase06">
+      <class name="com.testcasedemo.testcase1">
         <methods>
-          <include name="openBrowser"/>
-          <include name="varianttestcase0603"/>
-          <include name="login"/>
-          <include name="logout"/>
           <include name="closeBrowser"/>
-          <include name="varianttestcase0602"/>
-          <include name="varianttestcase0604"/>
-          <include name="varianttestcase0601"/>
+          <include name="testcase"/>
+          <include name="openBrowser"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- com.inventsuite.testscript.variants.varianttestcase06 -->
+      </class> <!-- com.testcasedemo.testcase1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -9,12 +9,13 @@ import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.demo.base;
 import com.inventsuite.generics.FileLib;
 import com.inventsuite.generics.baseclass;
 import com.inventsuite.pom.LoginPage;
 
 @Listeners(com.inventsuite.generics.Listener2.class)
-public class logintestcase05 extends baseclass{
+public class logintestcase05 extends base{
 	@Test
 	public void testcase05() throws InterruptedException, EncryptedDocumentException, IOException
 	{
@@ -34,7 +35,7 @@ public class logintestcase05 extends baseclass{
 	Thread.sleep(5000);
 	
 	String current_url= driver.getCurrentUrl();
-	String expected_url= "https://admin.gloify.co/dashboard";
+	String expected_url= "https://admin.gloify.co/dashboard1";
 	
 	
 	Assert.assertEquals(current_url, expected_url);

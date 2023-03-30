@@ -1,6 +1,5 @@
 com\inventsuite\pom\vendorpom.class
 com\inventsuite\generics\profilepage.class
-com\inventsuite\generics\WebDriverManager.class
 com\inventsuite\pom\LoginPage.class
 com\inventsuite\pom\Store.class
 com\inventsuite\generics\storebaseclass.class

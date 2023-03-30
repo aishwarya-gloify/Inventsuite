@@ -1,20 +1,15 @@
-package com.inventsuite.testscript;
+package com.testcasedemo;
 
 import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import com.inventsuite.testscript.logintestcase02;
+
 import com.demo.base;
-import com.inventsuite.generics.baseclass;
 import com.inventsuite.pom.LoginPage;
-@Listeners(com.inventsuite.generics.Listener2.class)
-public class logintestcase001 extends base {
-	
+
+public class testcase1 extends base{
 	@Test
 	public void testcase() throws EncryptedDocumentException, IOException, InterruptedException 
 	{
@@ -26,11 +21,6 @@ public class logintestcase001 extends base {
     String pwd= login.getPwtbx().getText();
       Assert.assertEquals(email, "");
       Assert.assertEquals(pwd, "");
-      
-	
-   
-	
-		
-	}
 
+}
 }

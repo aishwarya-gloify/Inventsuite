@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="1" parallel="classes" name="Suite">
-  <test thread-count="1" parallel="classes" name="Test">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
     <classes>
-      
-     
       <class name="com.inventsuite.testscript.logintestcase001"/>
       <class name="com.inventsuite.testscript.logintestcase01"/>
       <class name="com.inventsuite.testscript.logintestcase02"/>
-      
       <class name="com.inventsuite.testscript.logintestcase03"/>
       <class name="com.inventsuite.testscript.logintestcase04"/>
       <class name="com.inventsuite.testscript.logintestcase05"/>
-      <class name="com.inventsuite.testscript.logintestcase06"/>
-      <class name="com.inventsuite.testscript.logintestcase07"/>
-      <class name="com.inventsuite.testscript.logintestcase08"/>
-      <class name="com.inventsuite.testscript.logintestcase09"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

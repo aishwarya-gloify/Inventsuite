@@ -12,6 +12,7 @@ C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\tests
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\forgotpwd\forgotpwdtestcase05.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\logintestcase04.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\brand\brandtestcase03.java
+C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\demo\base.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\dashboard\dashboardtestcase09.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\logintestcase001.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\signin\signintestcase13.java
@@ -62,6 +63,7 @@ C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\tests
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\brand\brandtestcase16.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\tags\tagtestcase09.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\signin\signintestcase03.java
+C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\testcasedemo\testcase2.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\invenstsuite\testscript\store\storetestcase06.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\brand\deletetestcase02.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\logintestcase09.java
@@ -79,6 +81,7 @@ C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\tests
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\signin\signintestcase07.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\brand\deletetestcase01.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\profilepage\profiletestcase30.java
+C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\testcasedemo\testcase3.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\navtoforgotpwd.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\profilepage\profiletestcase28.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\profilepage\profiletestcase33.java
@@ -96,10 +99,12 @@ C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\tests
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\signin\signintestcase11.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\variants\variantestcase07.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\invenstsuite\testscript\store\storetestcase04.java
+C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\testcasedemo\testcase1.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\forgotpwd\forgotpwdtestcase02.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\variants\variantestcase01.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\signin\signintestcase02.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\brand\brandtestcase14.java
+C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\launchbrowser.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\tags\tagtestcase07.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\invenstsuite\testscript\store\storetestcase16.java
 C:\Users\gloif\eclipse-workspace\Inventsuite\src\test\java\com\inventsuite\testscript\brand\brandtestcase11.java

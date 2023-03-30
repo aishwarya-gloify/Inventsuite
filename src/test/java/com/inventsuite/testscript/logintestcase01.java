@@ -7,14 +7,15 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import com.demo.base;
 import com.inventsuite.generics.baseclass;
 import com.inventsuite.pom.LoginPage;
 
 
-@Listeners(com.inventsuite.generics.Listener2.class)
-public class logintestcase01 extends baseclass{
+//@Listeners(com.inventsuite.generics.Listener2.class)
+public class logintestcase01 extends base{
 	@Test
-	public void testlogin ()throws EncryptedDocumentException, IOException, InterruptedException{
+	public void testlogin (){
 		//checking logged in url is valid
 		LoginPage login= new LoginPage(driver);
 		
