@@ -24,4 +24,31 @@ public class fileupload
     robot.keyRelease(KeyEvent.VK_ENTER);
 
 }
+    
+    public void uploadfile6mb() throws AWTException
+    {
+    	Robot robot = new Robot();
+        StringSelection stringSelection = new StringSelection("C:\\Users\\gloif\\OneDrive\\Desktop\\6mb.jpg");
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+        robot.delay(1000);
+        robot.keyPress(KeyEvent.VK_CONTROL);
+        robot.keyPress(KeyEvent.VK_V);
+        robot.keyRelease(KeyEvent.VK_V);
+        robot.keyRelease(KeyEvent.VK_CONTROL);
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+    }
+    public void uploadvalidimage() throws AWTException
+    {
+    	Robot robot = new Robot();
+        StringSelection stringSelection = new StringSelection("C:\\Users\\gloif\\Downloads\\pexels-karolina-grabowska-5650026.jpg");
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+        robot.delay(1000);
+        robot.keyPress(KeyEvent.VK_CONTROL);
+        robot.keyPress(KeyEvent.VK_V);
+        robot.keyRelease(KeyEvent.VK_V);
+        robot.keyRelease(KeyEvent.VK_CONTROL);
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+    }
 }

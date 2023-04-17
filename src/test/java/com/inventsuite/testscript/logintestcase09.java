@@ -3,11 +3,12 @@ package com.inventsuite.testscript;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.inventsuite.generics.baseclass;
 import com.inventsuite.pom.LoginPage;
-
+@Listeners(com.inventsuite.generics.Listener2.class)
 public class logintestcase09 extends baseclass{
 	
 	@Test
@@ -37,10 +38,12 @@ public class logintestcase09 extends baseclass{
 	        		String message= records.getText();
 	        		
 	        		Assert.assertEquals(message, "No records found");
+	        	
 	        	}
                 	
 	}
         	
-
+System.out.println("Invalid data is working fine");
 	}
+
 }

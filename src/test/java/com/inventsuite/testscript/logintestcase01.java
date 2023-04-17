@@ -12,8 +12,8 @@ import com.inventsuite.generics.baseclass;
 import com.inventsuite.pom.LoginPage;
 
 
-@Listeners(com.demo.Listenertest.class)
-public class logintestcase01 extends base{
+@Listeners(com.inventsuite.generics.Listener2.class)
+public class logintestcase01 extends baseclass{
 	@Test
 	public void testlogin (){
 		//checking logged in url is valid
@@ -28,6 +28,8 @@ public class logintestcase01 extends base{
         }*/
 		 
 	Assert.assertEquals(current_url, url);
+	
+	System.out.println("login url is displayed properly");
 	}
 	
 

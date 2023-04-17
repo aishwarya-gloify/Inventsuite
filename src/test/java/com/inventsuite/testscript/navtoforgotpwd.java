@@ -21,6 +21,7 @@ public class navtoforgotpwd extends baseclass{
 	String Expected_url= "https://admin.gloify.co/forgot-password";
 	
 	Assert.assertEquals(current_url, Expected_url);
+	System.out.println("On click of signin link from Login page, page is navigating to signin page, is working fine");
 	}
 	
 

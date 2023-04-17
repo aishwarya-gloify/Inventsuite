@@ -6,11 +6,11 @@ import org.apache.poi.EncryptedDocumentException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.inventsuite.generics.baseclass;
-import com.inventsuite.generics.variantsbaseclass;
+
+import com.inventsuite.generics.baseclass2;
 import com.inventsuite.pom.variants;
 
-public class varianttestcase02 extends baseclass{
+public class varianttestcase02 extends baseclass2{
 	
 	@Test
 	public void varianttestcase02() throws InterruptedException, EncryptedDocumentException, IOException 

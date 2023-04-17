@@ -45,70 +45,18 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class baseclass {
 
 	static {
-		//System.setProperty("webdriver.chrome.driver","C:\\Users\\gloif\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
-		//		ChromeOptions options = new ChromeOptions();
-		//
-		//		options.addExtensions(new File("C:\\Users\\gloif\\eclipse-workspace\\Inventsuite\\src\\main\\resources\\driver\\chromedriver.exe"));
-		//
-		//		ChromeDriver driver = new ChromeDriver(options);
-		//WebDriverManager.chromedriver().setup();
-		//WebDriverManager.chromedriver().setup();
-		//driver = new ChromeDriver();
-		//		WebDriverManager.chromedriver().setup();
-		//		ChromeOptions options = new ChromeCapabilities().setChromeOptions();
-
-		//		WebDriverManager.chromedriver().setup();
-		//		WebDriver driver=new ChromeDriver();
-
-		//	ChromeOptions chromeOptions= new ChromeOptions();
-		//
-		//	
-		//
-		//	chromeOptions.setBinary("C:\\Users\\gloif\\eclipse-workspace\\Inventsuite\\src\\main\\resources\\driver\\chromedriver.exe");
-		//		System.setProperty("webdriver.chrome.driver","C:\\Users\\gloif\\eclipse-workspace\\Inventsuite\\src\\main\\resources\\driver\\chromedriver.exe");
-		//		ChromeDriver driver = new ChromeDriver(chromeOptions);
-		//	driver=new ChromeDriver(chromeOptions);
-		//		
-		//WebDriverManager.chromedriver().setup();
-		//		capabilities: {
-		//			  browserName: "chrome",
-		//			   chromeOptions:'binary': 'C:\Users\gloif\eclipse-workspace\Inventsuite\src\main\resources\driver\chromedriver.exe'}, 
-		//			},
-		//options = Options() options.binary_location = "C:\\Program Files\\Chrome\\chrome64_55.0.2883.75\\chrome.exe"driver = webdriver.Chrome(chrome_options = options, executable_path=r'C:\path\to\chromedriver.exe');
-		//		ChromeOptions options = new ChromeOptions();options.addExtensions(new File("C:\\Users\\gloif\\Downloads\\chromedriver_win32 (4)\\chromedriver.exe"));
-		//		ChromeDriver driver = new ChromeDriver(options);
-		//		chromeOptions = WebDriverException.ChromeOptions();
-		//				ChromeOptions.binary_location = "C:\\\\Users\\\\gloif\\\\AppData\\\\Local\\\\Google\\\\Chrome\\\\Application" chromeDriver = "/chromedriver.exe";
-		//				driver = WebDriverException.Chrome(chromeDriver, options=chromeOptions);
-
-		//		ChromeOptions chromeOptions= new ChromeOptions(); 
-		//		chromeOptions.setBinary("C:\\Users\\gloif\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe"); 
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\gloif\\eclipse-workspace\\Inventsuite\\src\\main\\resources\\driver\\chromedriver.exe");
-	
-//		DesiredCapabilities capabilities = new DesiredCapabilities();
-//		capabilities.setAcceptInsecureCerts(true); // dedicated method
-
+//		ChromeOptions chromeOptions= new ChromeOptions(); 
 	}
 	
-	/*static 
-	{
-		ChromeOptions chromeOptions= new ChromeOptions(); 
-		chromeOptions.setBinary("C:\\Users\\gloif\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe"); 
-		
-			
-			
-	}*/
+	
 public static WebDriver driver;
 	
 	@BeforeClass
 	public void openBrowser() {
-		//WebDriverManager.chromedriver().setup();
-		//WebDriver driver=new ChromeDriver();
 		ChromeOptions chromeOptions= new ChromeOptions(); 
 		chromeOptions.setBinary("C:\\Users\\gloif\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe"); 
 		driver=new ChromeDriver(chromeOptions);
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setAcceptInsecureCerts(true); // dedicated method
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	}
@@ -125,13 +73,11 @@ public static WebDriver driver;
 //            throw new Exception("Browser is not correct");
 //        }
 //    }
-//	@AfterClass
-//	public static void closeBrowser() {
-//		//driver.close();
-//		if (driver != null) {
-//            driver.quit();
-//		}
-//	}
+	@AfterClass
+	public static void closeBrowser() {
+		driver.close();
+		
+	}
 	@BeforeMethod
 	public void login() throws IOException {
 		//driver=new ChromeDriver();
@@ -139,26 +85,19 @@ public static WebDriver driver;
 		driver.get("https://admin.gloify.co/login");
 
 	}
-//	@AfterTest
-//	public void clean()
-//	{
-//		if (driver != null) {
-//        driver.quit();
-//		}
-////		}
-//	}
+
 	public static WebDriver getDriver() {
         return driver;
     }
-	//	@AfterMethod
-	//	public void logout() throws InterruptedException
-	//	{
-	//		profile p= new profile(driver);
-	//		p.getUserimg().click();
-	//		Thread.sleep(3000);
-	//		p.getLogout().click();
-	//		Thread.sleep(3000);
-	//	}
+		
+		public void logout() throws InterruptedException
+		{
+			profile p= new profile(driver);
+			p.getUserimg().click();
+			Thread.sleep(3000);
+			p.getLogout().click();
+			Thread.sleep(3000);
+		}
 
 	/** 
 	 * This is a actions method for mouse hover operation
@@ -237,7 +176,7 @@ public static WebDriver driver;
 
 	public void clickvendor()
 	{
-		WebElement vendor= driver.findElement(By.xpath("//a[@href='/vendor-list']//div[@role='button']"));
+		WebElement vendor= driver.findElement(By.xpath("//span[contains(text(),'Vendors')]"));
 		//a.moveToElement(vendor).click().perform();
 		Actions(vendor);
 		return;

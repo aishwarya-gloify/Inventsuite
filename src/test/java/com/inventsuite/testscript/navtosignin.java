@@ -21,7 +21,7 @@ public class navtosignin extends baseclass{
 		
 		Assert.assertEquals(current_url, expected_url);
 		
-	
+		System.out.println("On click of Forgot password link from Login page, page is navigating to Reset password page, is working fine");
 		
 	}
 	

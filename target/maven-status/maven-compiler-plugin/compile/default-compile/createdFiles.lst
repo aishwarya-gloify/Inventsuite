@@ -8,10 +8,10 @@ com\inventsuite\pom\profile.class
 com\inventsuite\generics\FileLib.class
 com\inventsuite\generics\tagbaseclass.class
 com\inventsuite\generics\brandbaseclass.class
-com\inventsuite\generics\vendor.class
 utility\tagselectdropdowns.class
 com\inventsuite\generics\Listener2.class
 com\inventsuite\pom\SignupPage.class
+com\inventsuite\generics\baseclass2.class
 com\inventsuite\generics\Listenerstore.class
 com\inventsuite\generics\product.class
 com\inventsuite\pom\EnterTimeTrackPage.class
@@ -20,6 +20,5 @@ com\inventsuite\generics\Listenerprofile.class
 com\inventsuite\pom\forgorpwd.class
 com\inventsuite\pom\brand.class
 Inventsuite\Inventsuite\App.class
-com\inventsuite\generics\variantsbaseclass.class
 com\inventsuite\generics\baseclass.class
 com\inventsuite\pom\tags.class

@@ -42,7 +42,7 @@ public class logintestcase06 extends baseclass{
 	  
 	    // Accept the alert.
 	    
-    
+    System.out.println("With invalid email id and valid password, validation message is displayed, is working fine");
 
 	}
 

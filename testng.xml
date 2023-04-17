@@ -3,12 +3,10 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.inventsuite.testscript.logintestcase001"/>
-      <class name="com.inventsuite.testscript.logintestcase01"/>
-      <class name="com.inventsuite.testscript.logintestcase02"/>
-      <class name="com.inventsuite.testscript.logintestcase03"/>
-      <class name="com.inventsuite.testscript.logintestcase04"/>
-      <class name="com.inventsuite.testscript.logintestcase05"/>
+      <class name="com.inventsuite.testscript.variants.varianttestcase06"/>
+      <class name="com.inventsuite.testscript.variants.variantetscase05"/>
+      <class name="com.inventsuite.testscript.variants.variantestcase07"/>
+      <class name="com.inventsuite.testscript.variants.variantestcase01"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

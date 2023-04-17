@@ -18,8 +18,8 @@ import org.testng.annotations.Test;
 import com.demo.base;
 import com.inventsuite.generics.baseclass;
 import com.inventsuite.pom.LoginPage;
-@Listeners(com.demo.Listenertest.class)
-public class logintestcase04 extends base{
+@Listeners(com.inventsuite.generics.Listener2.class)
+public class logintestcase04 extends baseclass{
 	@Test
 	public void testcase04() throws EncryptedDocumentException, IOException, InterruptedException
 	{
@@ -39,6 +39,7 @@ public class logintestcase04 extends base{
 		Thread.sleep(5000);
 		assert (login.getPasswordvalidation().isDisplayed()&&login.getEmailvalidation().isDisplayed());
 	//	assert login.emailvalidation.isDisplayed();
+		System.out.println("Checking with blank email and blank password, on click on login validation message is displayed");
 	}
 
 }

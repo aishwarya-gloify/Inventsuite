@@ -15,14 +15,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import com.inventsuite.generics.FileLib;
 import com.inventsuite.generics.baseclass;
+import com.inventsuite.generics.baseclass2;
 import com.inventsuite.pom.fileupload;
 import com.inventsuite.pom.variants;
 
 // need to change variant name
-public class varianttestcase06 extends baseclass{
+public class varianttestcase06 extends baseclass2{
 	@Test(priority = 0)
 	public void varianttestcase0601() throws EncryptedDocumentException, IOException, InterruptedException
 	{
@@ -64,14 +66,17 @@ public class varianttestcase06 extends baseclass{
 		dots.click();
 		
 		v.getEdit_btn().click();
+		//SoftAssert s= new SoftAssert();
 		
 		assert v.getEdit_variant_text().isDisplayed();
-		
+	//s.assertEquals(v.getEdit_variant_text().isDisplayed(), true);
 		Assert.assertEquals(v.getVariant_name_textbox().getAttribute("value"), data1);
-		
+		//s.assertEquals(v.getVariant_name_textbox().getAttribute("value"), data1);
 		Assert.assertEquals(v.getMedia_type().getAttribute("value"), "true");
-		
+		//s.assertEquals(v.getMedia_type().getAttribute("value"), true);
 		assert driver.findElement(By.xpath("//p[normalize-space()='Variant Images']")).isDisplayed();
+		//s.assertEquals(driver.findElement(By.xpath("//p[normalize-space()='Variant Images']")), false);
+		
 	}
 	
 	@Test(priority = 1)
@@ -245,7 +250,9 @@ List<WebElement> list2= driver.findElements(By.xpath("//td[@class='MuiTableCell-
 	}
 	System.out.println(data1+" is deleted from the list");
 	
+	
 }
+	
 	}
 
 

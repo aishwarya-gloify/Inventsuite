@@ -41,6 +41,8 @@ public class logintestcase07 extends baseclass{
 	
 	Assert.assertEquals(message1,"Password at least six characters");
 	
+	System.out.println("With valid email address and password less than 6 characters, is working fine");
+	
 	}
   
 }

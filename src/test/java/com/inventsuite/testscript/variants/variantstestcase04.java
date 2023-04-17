@@ -9,10 +9,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.inventsuite.generics.baseclass;
-import com.inventsuite.generics.variantsbaseclass;
+import com.inventsuite.generics.baseclass2;
+
 import com.inventsuite.pom.variants;
 
-public class variantstestcase04 extends baseclass{
+public class variantstestcase04 extends baseclass2{
 	@Test
 	public void variantstestcase04() throws InterruptedException, EncryptedDocumentException, IOException
 	{

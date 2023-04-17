@@ -1,5 +1,6 @@
 package com.inventsuite.pom;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -55,7 +56,7 @@ public class variants {
 	@FindBy(xpath = "//span[normalize-space()='Add Variant Option']")
 	private WebElement add_variant_optn_btn;
 	
-	@FindBy(xpath = "//h6[normalize-space()='Create Variant Option']")
+	@FindBy(xpath = "//p[@class='MuiTypography-root MuiTypography-body1']//h6")
 	private WebElement create_variant_optn_txt;
 	
 	@FindBy(xpath = "//input[@placeholder='Enter Value']")
@@ -87,6 +88,78 @@ public class variants {
 	@FindBy(xpath = "//button[normalize-space()='OK']")
 	private WebElement delete_ok_btn;
 	
+	@FindBy(xpath = "//div[@class='errorMessage ']")
+	private WebElement max_image_limit;
+	
+	@FindBy(xpath = "//a[@class='linkButton float-right']")
+	private WebElement variant_details_edit_btn;
+	
+	@FindBy(id = "swal2-content")
+	private WebElement variantname_exit_validation;
+	
+	@FindBy(xpath = "//img[@alt='variant image']")
+	private WebElement variantdetails_imgpresent;
+	
+	@FindBy(xpath = "//h6[normalize-space()='Variant Options']")
+	private WebElement variant_option_txt;
+	
+	@FindBy(xpath = "//span[@class='noData']")
+	private WebElement nodata_txt;
+	
+	@FindBy(xpath = "//span[normalize-space()='Add Variant Option']")
+	private WebElement add_variant_option_btn;
+	
+	@FindBy(xpath = "//button[@aria-label='close']//span[@class='MuiIconButton-label']//*[name()='svg']")
+	private WebElement variant_optn_close_icon;
+	
+
+	@FindBy(xpath = "//div[@class='MuiBox-root jss227']//p[@id='name-text']")
+	private WebElement sub_variant_textbox_validation;
+	
+	@FindBy(xpath = "//div[@class='MuiBox-root jss102']//p")
+	private WebElement unit_textbox_validation;
+	
+	
+	public WebElement getSub_variant_textbox_validation() {
+		return sub_variant_textbox_validation;
+	}
+
+	public WebElement getUnit_textbox_validation() {
+		return unit_textbox_validation;
+	}
+
+	public WebElement getVariant_option_txt() {
+		return variant_option_txt;
+	}
+
+	public WebElement getNodata_txt() {
+		return nodata_txt;
+	}
+
+	public WebElement getAdd_variant_option_btn() {
+		return add_variant_option_btn;
+	}
+
+	public WebElement getVariant_optn_close_icon() {
+		return variant_optn_close_icon;
+	}
+
+	public WebElement getVariantdetails_imgpresent() {
+		return variantdetails_imgpresent;
+	}
+
+	public WebElement getVariantname_exit_validation() {
+		return variantname_exit_validation;
+	}
+
+	public WebElement getVariant_details_edit_btn() {
+		return variant_details_edit_btn;
+	}
+
+	public WebElement getMax_image_limit() {
+		return max_image_limit;
+	}
+
 	public WebElement getYes_delete_it_btn() {
 		return yes_delete_it_btn;
 	}

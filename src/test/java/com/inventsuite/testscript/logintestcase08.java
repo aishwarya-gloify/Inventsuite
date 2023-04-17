@@ -37,6 +37,7 @@ public class logintestcase08 extends baseclass{
 	 Assert.assertEquals( login.getEmailvalidation().getText(),"Invalid email, eg: abc@example.xyz");
 	 Assert.assertEquals(login.getPasswordvalidation().getText(), "Password at least six characters");
 	
+	 System.out.println("New user tryng to login validation message is displayed, is working fine");
 	}
 
 }
